@@ -28,7 +28,7 @@ object KafkaBuild extends Build {
     organization := "org.apache",
     scalacOptions ++= Seq("-deprecation", "-unchecked", "-g:none"),
     crossScalaVersions := Seq("2.8.0","2.8.2", "2.9.1", "2.9.2"),
-    scalaVersion := "2.8.0",
+    scalaVersion := "2.9.2",
     javacOptions ++= Seq("-Xlint:unchecked", "-source", "1.5"),
     parallelExecution in Test := false, // Prevent tests from overrunning each other
     libraryDependencies ++= Seq(
